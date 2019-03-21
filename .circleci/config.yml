@@ -57,7 +57,7 @@ jobs:
             echo "Working directory is ${PWD}"
             ls ${PWD}/scif_app_recipes
             # If not set, define CONTAINER_NAME
-            CONTAINER_NAME="centos7_base_image"
+            CIRCLE_PROJECT_REPONAME="centos7_base_image"
             if [ ! -n "${CONTAINER_NAME:-}" ]
                 then
                     CONTAINER_NAME="${CIRCLE_PROJECT_USERNAME}/${CIRCLE_PROJECT_REPONAME}"
