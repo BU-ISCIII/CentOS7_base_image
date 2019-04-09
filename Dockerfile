@@ -18,8 +18,8 @@ RUN echo "Install basic development tools" && \
 # Include ENV variables
 ENV LC_ALL=en_US.UTF-8
 ENV PATH=/scif/apps/gcc/bin:$PATH
-ENV LD_LIBRARY_PATH=/usr/local/lib
-ENV LD_LIBRARY_PATH=/scif/apps/gcc/lib:$LD_LIBRARY_PATH
+ENV LD_LIBRARY_PATH=/scif/apps/gcc/lib
+#ENV LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib
 ENV CC=/scif/apps/gcc/bin/gcc
 ENV CPP=/scif/apps/gcc/bin/cpp
 ENV CXX=/scif/apps/gcc/bin/g++
